@@ -1,0 +1,158 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoWrapper {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    /* Filter to turn white to purple (#8E24AA) */
+    /* Calculated using https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: brightness(0) saturate(100%) invert(19%) sepia(68%) saturate(3079%) hue-rotate(275deg) brightness(93%) contrast(98%);
+}
+
+.logoImage {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.link {
+    font-weight: 600;
+    transition: color 0.3s ease;
+    color: var(--text-main);
+    font-size: 1rem;
+}
+
+.link:hover {
+    color: var(--primary);
+}
+
+.mobileToggle {
+    display: none;
+    background: var(--secondary-bg);
+    border: none;
+    font-size: 1.2rem;
+    color: var(--primary);
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.mobileToggle:hover {
+    background: var(--primary-light);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.desktopBtn {
+    display: block;
+}
+
+.mobileBtn {
+    display: none;
+}
+
+@media (max-width: 968px) {
+    .mobileToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .desktopBtn {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .navOpen {
+        right: 0;
+    }
+
+    .link {
+        font-size: 1.5rem;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+    }
+
+    .navOpen .link {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+
+    .navOpen .link:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+
+    .navOpen .link:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+
+    .navOpen .link:nth-child(4) {
+        transition-delay: 0.5s;
+    }
+
+    .mobileBtn {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease 0.6s;
+    }
+
+    .navOpen .mobileBtn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

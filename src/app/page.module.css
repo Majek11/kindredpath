@@ -1,0 +1,389 @@
+.main {
+  min-height: 100vh;
+  background: var(--warm-bg);
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  color: var(--text-main);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mission Section */
+.missionSection {
+  padding: 120px 0;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.missionSection::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(142, 36, 170, 0.05) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.missionContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.missionText {
+  padding-right: 20px;
+}
+
+.missionText h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  color: var(--text-main);
+}
+
+.missionText p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.missionVisual {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glassCard {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  padding: 50px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  z-index: 2;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 500px;
+}
+
+.glassCard h3 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.glassCard p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.decorativeCircle {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: 120px 0;
+  background-color: var(--warm-bg);
+  position: relative;
+}
+
+.valuesSection .sectionTitle {
+  color: var(--text-main);
+}
+
+.valuesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.valueCard {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  flex: 1 1 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.valueCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(142, 36, 170, 0.1);
+}
+
+.valueIcon {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: var(--primary);
+  background: var(--primary-light);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: var(--white);
+}
+
+.valueCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.valueCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Services Section */
+.servicesSection {
+  padding: 120px 0;
+  background-color: var(--white);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+/* Team Section */
+.teamSection {
+  padding: 120px 0;
+  background: var(--warm-bg);
+  position: relative;
+  z-index: 1;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.teamCard {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s ease;
+  position: relative;
+  height: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.teamCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(142, 36, 170, 0.1);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+  z-index: 1;
+}
+
+.teamInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 2;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.teamCard:hover .teamInfo {
+  transform: translateY(-10px);
+}
+
+.teamInfo h3 {
+  color: var(--white);
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.teamInfo p {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: 120px 0;
+  background: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+.faqTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: var(--text-main);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: var(--warm-bg);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.faqItem:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.faqQuestion {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faqQuestion::before {
+  content: 'Q.';
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.faqAnswer {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .missionContent {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .missionText h2 {
+    font-size: 3rem;
+  }
+
+  .missionVisual {
+    height: auto;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .valuesGrid {
+    gap: 20px;
+  }
+
+  .valueCard {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .missionText h2 {
+    font-size: 2.5rem;
+  }
+
+  .missionSection,
+  .valuesSection,
+  .servicesSection,
+  .teamSection,
+  .faqSection {
+    padding: 80px 0;
+  }
+}

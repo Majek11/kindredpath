@@ -1,0 +1,169 @@
+.section {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.headerContent {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.description {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.link {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.link:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.mainImage {
+    transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .mainImage {
+    transform: scale(1.02);
+}
+
+.cardsContainer {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    z-index: 10;
+}
+
+.card {
+    /* Default card style - subtle or transparent */
+    padding: 25px 20px;
+    border-radius: var(--radius-md);
+    color: var(--white);
+    transition: all 0.4s ease;
+    text-align: center;
+    /* Minimal background for readability */
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* The distinct Glassmorphism Card */
+.cardGlass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.cardGlass:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+}
+
+.cardValue {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cardLabel {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    opacity: 0.95;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 968px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .imageWrapper {
+        height: auto;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsContainer {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        padding: 20px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        margin-top: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .cardsContainer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
