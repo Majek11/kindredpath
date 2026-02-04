@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: "Bringing hope to life, one family at a time.",
   icons: {
     icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
 };
 

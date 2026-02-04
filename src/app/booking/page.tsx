@@ -27,15 +27,21 @@ export default function Booking() {
     ];
 
     const doctors = [
-        { id: 'dr-mitchell', name: 'Dr. Grace Mitchell', role: 'Medical Director' },
-        { id: 'dr-thompson', name: 'Dr. Michael Thompson', role: 'Senior Embryologist' },
-        { id: 'dr-harris', name: 'Dr. Olivia Harris', role: 'Fertility Specialist' },
+        { id: 'mrs-aiyeonegun', name: 'Mrs Aiyeonegun', role: 'Medical Director' },
+        { id: 'dr-adegoke', name: 'Dr. Adegoke', role: 'Senior Embryologist' },
+        { id: 'mrs-awopetu', name: 'Mrs. Awopetu Esther O.', role: 'Fertility Nurse' },
+        { id: 'expert-4', name: 'Team Member', role: 'Fertility Specialist' },
+        { id: 'expert-5', name: 'Team Member', role: 'Fertility Specialist' },
+        { id: 'expert-6', name: 'Team Member', role: 'Fertility Specialist' },
     ];
 
     const team = [
-        { name: "Dr. Grace Mitchell", role: "Medical Director", image: "/doctor-1.png" },
-        { name: "Dr. Michael Thompson", role: "Senior Embryologist", image: "/doctor-2.png" },
-        { name: "Dr. Olivia Harris", role: "Fertility Specialist", image: "/doctor-3.png" },
+        { name: "Mrs Aiyeonegun", role: "Medical Director", image: "/images/expert-1.jpg" },
+        { name: "Dr. Adegoke", role: "Senior Embryologist", image: "/images/expert-2.jpg" },
+        { name: "Mrs. Awopetu Esther O.", role: "Fertility Nurse", image: "/images/expert-3.jpg" },
+        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-4.jpg" },
+        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-5.jpg" },
+        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
     ];
 
     const timeSlots = ['09:00 AM', '10:00 AM', '11:30 AM', '02:00 PM', '03:30 PM', '04:30 PM'];
