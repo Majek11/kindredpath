@@ -86,12 +86,17 @@ export default function Home() {
   ];
 
   const team = [
-    { name: "Mrs Aiyeonegun", role: "Medical Director", image: "/images/expert-1.jpg" },
-    { name: "Dr. Adegoke", role: "Senior Embryologist", image: "/images/expert-2.jpg" },
-    { name: "Mrs. Awopetu Esther O.", role: "Fertility Nurse", image: "/images/expert-3.jpg" },
-    { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-4.jpg" },
-    { name: "Team Member", role: "Head of Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
+    { name: "Proff Adewunmi Adeniyi", role: "Head of Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
+    { name: "Dr Mrs Ottun Abimbola .T", role: "Head of Department Obstetrics and GynaecologyLagos state university teaching Hospital", image: "/images/expert-4.jpg" },
+    { name: "Dr. Adegoke", role: "Fertility Specialist", image: "/images/expert-2.jpg" },
     { name: "Dr. Alausa", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
+    { name: "Mrs. Awopetu Esther O.", role: "Fertility Nurse", image: "/images/expert-3.jpg" },
+    { name: "Mrs Aiyeonegun", role: "Fertility Nurse", image: "/images/expert-1.jpg" },
+    { name: "The Nursing Team", role: "Nursing Team", image: "/images/Nursing-team.jpg" },
+    { name: "Mrs. Sholesi", role: "Head of Embryologist", image: "/images/Sholesi.jpg" },
+    { name: "Embryologist Team", role: "Embryologist Team", image: "/images/Embryologists.jpg" },
+    { name: "Administrative Staff", role: "Administrative Team", image: "/images/Administrative Staff.jpeg" },
+    { name: "Client Service Executives", role: "Client Service Executives", image: "/images/Client service exec.jpeg" },
   ];
 
   return (
