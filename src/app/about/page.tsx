@@ -1,41 +1,17 @@
 'use client';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import styles from './page.module.css';
 import Image from 'next/image';
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function About() {
-    const teamRef = useRef<HTMLElement>(null);
 
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            // Animate on mount — no ScrollTrigger here because the "Our Story"
-            // section is already in the viewport on load; a scroll-based trigger
-            // would never fire and would leave the elements stuck at opacity: 0.
-            gsap.from(`.${styles.textBlock}`, {
-                x: -50,
-                opacity: 0,
-                duration: 0.8,
-                delay: 0.3,
-                ease: "power3.out"
-            });
 
-            gsap.from(`.${styles.imageBlock}`, {
-                x: 50,
-                opacity: 0,
-                duration: 0.8,
-                delay: 0.5,
-                ease: "power3.out"
-            });
-        });
+    // No GSAP needed for the "Our Story" section — the CSS module handles the
+    // fadeInLeft / fadeInRight animations on .textBlock and .imageBlock directly.
+    // Adding GSAP on top created a race condition on mobile where GSAP's inline
+    // opacity:0 overrode the CSS animation mid-play, causing the visible fade-out.
 
-        return () => ctx.revert();
-    }, []);
 
     const team = [
         { name: "Proff Adewunmi Adeniyi", role: "Head. Institute of Fertility Medicine Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
@@ -90,7 +66,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={styles.teamSection} ref={teamRef}>
+            <section className={styles.teamSection}>
                 <div className="container">
                     <h2 className={styles.sectionTitle}>Meet Our Experts</h2>
                     <div className={styles.teamGrid}>
