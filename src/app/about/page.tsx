@@ -11,31 +11,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
     const teamRef = useRef<HTMLElement>(null);
-    const contentRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
+            // Animate on mount — no ScrollTrigger here because the "Our Story"
+            // section is already in the viewport on load; a scroll-based trigger
+            // would never fire and would leave the elements stuck at opacity: 0.
             gsap.from(`.${styles.textBlock}`, {
-                scrollTrigger: {
-                    trigger: contentRef.current,
-                    start: "top 80%",
-                },
                 x: -50,
                 opacity: 0,
                 duration: 0.8,
+                delay: 0.3,
                 ease: "power3.out"
             });
 
             gsap.from(`.${styles.imageBlock}`, {
-                scrollTrigger: {
-                    trigger: contentRef.current,
-                    start: "top 80%",
-                },
                 x: 50,
                 opacity: 0,
                 duration: 0.8,
-                ease: "power3.out",
-                delay: 0.2
+                delay: 0.5,
+                ease: "power3.out"
             });
         });
 
@@ -43,12 +38,17 @@ export default function About() {
     }, []);
 
     const team = [
-        { name: "Mrs Aiyeonegun", role: "Medical Director", image: "/images/expert-1.jpg" },
-        { name: "Dr. Adegoke", role: "Senior Embryologist", image: "/images/expert-2.jpg" },
-        { name: "Mrs. Awopetu Esther O.", role: "Fertility Nurse", image: "/images/expert-3.jpg" },
-        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-4.jpg" },
-        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-5.jpg" },
-        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
+        { name: "Proff Adewunmi Adeniyi", role: "Head. Institute of Fertility Medicine Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
+        { name: "Dr Mrs Ottun Abimbola .T", role: "Head of Department Obstetrics and Gynaecology Lagos state university teaching Hospital", image: "/images/expert-4.jpg" },
+        { name: "Dr. Adegoke", role: "Fertility Specialist", image: "/images/expert-2.jpg" },
+        { name: "Dr. Alausa", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
+        { name: "Mrs. Awopetu Esther O.", role: "Head of Fertility Nurse", image: "/images/expert-3.jpg" },
+        { name: "Mrs Aiyeonegun", role: "Fertility Nurse", image: "/images/expert-1.jpg" },
+        { name: "The Nursing Team", role: "Nursing Team", image: "/images/Nursing-team.jpg" },
+        { name: "Mrs. Sholesi", role: "Head of Embryology", image: "/images/Sholesi.jpg" },
+        { name: "Embryologist Team", role: "Embryologist Team", image: "/images/Embryologists.jpg" },
+        { name: "Administrative Staff", role: "Administrative Team", image: "/images/Administrative Staff.jpeg" },
+        { name: "Client Service Executives", role: "Client Service Executives", image: "/images/Client service exec.jpeg" },
     ];
 
     return (
@@ -67,7 +67,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={styles.contentSection} ref={contentRef}>
+            <section className={styles.contentSection}>
                 <div className="container">
                     <div className={styles.grid}>
                         <div className={styles.textBlock}>
