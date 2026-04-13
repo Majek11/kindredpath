@@ -86,7 +86,7 @@ export default function Home() {
   ];
 
   const team = [
-    { name: "Prof Adewunmi Adeniyi", role: "Head. Institute of Fertility Medicine Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
+    { name: "Prof Adewunmi Adeniyi", role: "Head, The Institute of Fertility Medicine Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
     { name: "Dr Mrs Ottun Abimbola .T", role: "Head of Department Obstetrics and GynaecologyLagos state university teaching Hospital", image: "/images/expert-4.jpg" },
     { name: "Dr. Adegoke", role: "Fertility Specialist", image: "/images/expert-2.jpg" },
     { name: "Dr. Alausa", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
