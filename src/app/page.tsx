@@ -91,10 +91,10 @@ export default function Home() {
     { name: "Dr. Adegoke", role: "Fertility Specialist", image: "/images/expert-2.jpg" },
     { name: "Dr. Alausa", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
     { name: "Mrs. Awopetu Esther O.", role: "Head of Fertility Nurse", image: "/images/expert-3.jpg" },
-    { name: "Mrs Aiyeonegun", role: "Fertility Nurse", image: "/images/expert-1.jpg" },
+    { name: "Mrs Olaniyi", role: "Fertility Nurse", image: "/images/expert-1.jpg" },
     { name: "The Nursing Team", role: "Nursing Team", image: "/images/Nursing-team.jpg" },
     { name: "Mrs. Sholesi", role: "Head of Embryology", image: "/images/Sholesi.jpg" },
-    { name: "Embryologist Team", role: "Embryologist Team", image: "/images/Embryologists.jpg" },
+    { name: "Embryology Team", role: "Embryology Team", image: "/images/Embryologists.jpg" },
     { name: "Administrative Staff", role: "Administrative Team", image: "/images/Administrative Staff.jpeg" },
     { name: "Client Service Executives", role: "Client Service Executives", image: "/images/Client service exec.jpeg" },
   ];
