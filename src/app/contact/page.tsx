@@ -55,7 +55,7 @@ export default function Contact() {
                                 </div>
                                 <div className={styles.itemContent}>
                                     <h3>Email Us</h3>
-                                    <p>contact@Ifmkindredpathfertilitycentre.com</p>
+                                    <p>Kindredpathifm@gmail.com</p>
                                 </div>
                             </div>
 
