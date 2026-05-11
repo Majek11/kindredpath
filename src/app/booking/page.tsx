@@ -36,12 +36,17 @@ export default function Booking() {
     ];
 
     const team = [
-        { name: "Mrs Aiyeonegun", role: "Medical Director", image: "/images/expert-1.jpg" },
-        { name: "Dr. Adegoke", role: "Senior Embryologist", image: "/images/expert-2.jpg" },
-        { name: "Mrs. Awopetu Esther O.", role: "Fertility Nurse", image: "/images/expert-3.jpg" },
-        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-4.jpg" },
-        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-5.jpg" },
-        { name: "Team Member", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
+        { name: "Prof Adewunmi Adeniyi", role: "Head, The Institute of Fertility Medicine Department Obstetrics and Gynaecology Lagos State University Teaching Hospital", image: "/images/expert-5.jpg" },
+        { name: "Dr Mrs Ottun Abimbola .T", role: "Head of Department Obstetrics and GynaecologyLagos state university teaching Hospital", image: "/images/expert-4.jpg" },
+        { name: "Dr. Adegoke", role: "Fertility Specialist", image: "/images/expert-2.jpg" },
+        { name: "Dr. Alausa", role: "Fertility Specialist", image: "/images/expert-6.jpg" },
+        { name: "Mrs. Awopetu Esther O.", role: "Head of Fertility Nurse", image: "/images/expert-3.jpg" },
+        { name: "Mrs Olaniyi", role: "Fertility Nurse", image: "/images/expert-1.jpg" },
+        { name: "The Nursing Team", role: "Nursing Team", image: "/images/Nursing-team.jpg" },
+        { name: "Mrs. Sholesi", role: "Head of Embryology", image: "/images/Sholesi.jpg" },
+        { name: "Embryology Team", role: "Embryology Team", image: "/images/Embryologists.jpg" },
+        { name: "Administrative Staff", role: "Administrative Team", image: "/images/Administrative Staff.jpeg" },
+        { name: "Client Service Executives", role: "Client Service Executives", image: "/images/Client service exec.jpeg" },
     ];
 
     const timeSlots = ['09:00 AM', '10:00 AM', '11:30 AM', '02:00 PM', '03:30 PM', '04:30 PM'];

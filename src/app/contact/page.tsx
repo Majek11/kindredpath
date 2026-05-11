@@ -35,7 +35,7 @@ export default function Contact() {
                                 </div>
                                 <div className={styles.itemContent}>
                                     <h3>Visit Us</h3>
-                                    <p>123 Fertility Lane, Medical District<br />New York, NY 10001</p>
+                                    <p>1-5 Oba Akinjobi Way,<br />Ikeja</p>
                                 </div>
                             </div>
 
@@ -45,7 +45,7 @@ export default function Contact() {
                                 </div>
                                 <div className={styles.itemContent}>
                                     <h3>Call Us</h3>
-                                    <p>+1 (555) 123-4567<br />Mon-Fri, 8am-6pm</p>
+                                    <p>09132347955</p>
                                 </div>
                             </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
                                 </div>
                                 <div className={styles.itemContent}>
                                     <h3>Email Us</h3>
-                                    <p>contact@kindredpath.com<br />support@kindredpath.com</p>
+                                    <p>contact@Ifmkindredpathfertilitycentre.com</p>
                                 </div>
                             </div>
 
@@ -65,7 +65,7 @@ export default function Contact() {
                                 </div>
                                 <div className={styles.itemContent}>
                                     <h3>Working Hours</h3>
-                                    <p>Mon - Fri: 8:00 AM - 6:00 PM<br />Sat: 9:00 AM - 2:00 PM</p>
+                                    <p>8:00 AM - 4:00 PM<br />Monday - Friday</p>
                                 </div>
                             </div>
                         </div>
